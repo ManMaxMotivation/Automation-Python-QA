@@ -20,8 +20,8 @@ response = post_new_user(data.user_body)
 
 # Вывод HTTP-статус кода ответа на запрос
 # Код состояния указывает на результат обработки запроса сервером
-print(response.status_code)
-print(response.json())
+# print(response.status_code)
+# print(response.json())
 
 # Определение функции для отправки POST-запроса создания нового набора. Два параметра: kit_body — тело запроса, auth_token — токен авторизации.
 def post_new_client_kit(kit_body,auth_token):
@@ -38,5 +38,5 @@ response = post_new_client_kit(data.kit_body,data.headers["Authorization"])
 
 # Вывод HTTP-статус кода ответа и тела ответа в формате JSON
 # Это позволяет проверить успешность выполнения запроса и посмотреть результаты поиска наборов
-print(response.status_code)
-print(response.json())
+# print(response.status_code)
+# print(response.json())
